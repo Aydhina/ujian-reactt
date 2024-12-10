@@ -5,7 +5,7 @@ const Credit = () => {
         <div className="credit d-flex flex-column align-items-center py-3">
             {/* Logo */}
             <div className="logo-credit mb-3">
-                <img src="foto/Logo.png" alt="Logo" />
+                <img src="/foto/Logo.png" alt="Logo" />
             </div>
 
             {/* Navigation Links */}
@@ -35,16 +35,16 @@ const Credit = () => {
             {/* Social Media Links */}
             <div className="sosmed mt-4 d-flex">
                 <a href="#" className="text-dark mx-2">
-                    <img src="foto/Instagram.png" alt="Instagram" width="20" />
+                    <img src="/foto/Instagram.png" alt="Instagram" width="20" />
                 </a>
                 <a href="#" className="text-dark mx-2">
-                    <img src="foto/Twitter.png" alt="Twitter" width="20" />
+                    <img src="/foto/Twitter.png" alt="Twitter" width="20" />
                 </a>
                 <a href="#" className="text-dark mx-2">
-                    <img src="foto/Facebook.png" alt="Facebook" width="20" />
+                    <img src="/foto/Facebook.png" alt="Facebook" width="20" />
                 </a>
                 <a href="#" className="text-dark mx-2">
-                    <img src="foto/LinkedIn.png" alt="LinkedIn" width="20" />
+                    <img src="/foto/LinkedIn.png" alt="LinkedIn" width="20" />
                 </a>
             </div>
         </div>

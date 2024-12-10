@@ -3,32 +3,30 @@ import React from 'react';
 const Header = () => {
     return (
         <header>
-            <div className="main-container">
+            <div className="container1">
                 <div className="nav">
                     <div className="logo">
-                        <img src="foto/Logo.png" alt="logo"  style={{ width: '200px' }} />
+                        <img src="/foto/Logo.png" alt="logo"  style={{ width: '200px' }} />
                     </div>
 
                     <nav>
+                        <div className="pilihan">
                         <ul>
                             <li><a href="#services">Home</a></li>
                             <li><a href="#about">About Me</a></li>
                             <li><a href="#service">Services</a></li>
-                            <li><a href="#">Testimonials</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="#testimonials">Testimonials</a></li>
+                            <li><a href="#contach">Contact</a></li>
                             <li>
-                                <a href="#" target="_blank">
-                                    <button class="btn">Resume</button>
+                                <a href="#wwww" >
+                                    <button className="btn-header">Download CV</button>
                                 </a>
                             </li>
                         </ul>
+                        </div>
                     </nav>
 
-                    <div class="burger">
-                        <div class="line-1"></div>
-                        <div class="line-2"></div>
-                        <div class="line-3"></div>
-                    </div>
+                   
                 </div>
 
             </div>

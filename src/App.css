@@ -1,171 +1,62 @@
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-} */
- 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 
 :root {
-  --primaryTextColor: #232e35; /* Untuk title atau judul */
-  --secondaryTextColor: #656d72; /* Untuk text biasa seperti paragraph contohnya */
-
-  --borderColor: #f1f1f1;
-  --lineColor: #d9d9d9; /* untuk line di pre-title */
-
+  --primaryTextColor: #232e35; /* Hitam */
+  --secondaryTextColor: #656d72; /* Abu */
+  --thirdBackgroundColor: #ff7700; /* Orange */
   --primaryBackgroundColor: #fff;
-  --secondaryBackgroundColor: #fbfbfb;
-  --thirdBackgroundColor: #f5f3fe;
-
-  --primaryIconColor: #7e74f1;
-  --primaryIconColorHover: #5d51e8;
-
-  --sectionPadding: 6rem 0;
-
-  --itemBorderRadius: 0.7rem;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
+  --borderColor: #f1f1f1;
 }
 
 body {
   font-family: "Roboto", sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-strong {
-  color: var(--primaryTextColor);
-}
-
-p {
-  font-size: 1rem; /* 16 px */
-  line-height: 1.9rem; /*30.4 px */
-}
-
-p,
-span,
-label,
-input,
-textarea,
-li {
-  color: var(--secondaryTextColor);
+  margin: 0;
+  padding: 0;
 }
 
 a {
   text-decoration: none;
 }
 
-/* End Preparation */
+.text-warning {
+  color: #ff7700 !important;
+}
 
-.main-container {
+/* --- header --- */
+.container1 {
   width: 1200px;
   margin: 0 auto;
 }
 
 @media screen and (max-width: 1200px) {
-  .main-container {
+  .container1 {
     width: 90%;
   }
 }
 
-/* Buttons */
-.btn {
-  padding: 1rem 1.5rem;
-  background: white;
-  border: 1.5px solid var(--borderColor);
-  cursor: pointer;
-  transition: 0.2s ease-in-out;
-}
-
-.btn:hover {
-  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
-}
-
-/* Titles */
-.section-title {
-  margin: 1rem 0 4rem;
-  font-size: 2rem;
-}
-
-.pre-title {
-  text-transform: uppercase;
-  letter-spacing: 0.5rem;
-  color: var(--secondaryTextColor);
-  position: relative;
-  padding-left: 40px;
-  width: fit-content;
-  font-weight: 400;
-  font-size: 0.9rem;
-}
-
-.pre-title::before {
-  content: "";
-  width: 30px;
-  height: 1px;
-  background: var(--lineColor);
-  position: absolute;
-  display: block;
-  left: 0;
-  top: 50%;
-}
-
-/* Layouts */
-.grid-3 {
-  display: grid;
-  /* grid-template-columns: 1fr 1fr 1fr; use this first, use code below when its time for explaining responsive design part */
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 3rem;
-}
-
-/* --- Logo and Navigation Menu --- */
 .nav {
-  /* display: flex; */
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.btn-header {
+  background-color: var(--thirdBackgroundColor); 
+  color: white; 
+  padding: 0.5rem 1.5rem; 
+  border-radius: 0.25rem; 
+  border: none; 
+  transition: 0.3s ease;
+}
+
+.btn-header:hover {
+  background-color: #e66a00; 
+  color: white; 
+}
+
+.nav {
   justify-content: space-between;
   padding: 2rem 0;
 }
@@ -181,15 +72,8 @@ nav ul {
   margin-left: 50px;
   display: flex;
   align-items: center;
-  /* font-weight: 100;
-  font-size: 1rem; */
 }
 
-.logo a {
-  color: var(--primaryTextColor);
-}
-
-/* Navigation Menu */
 nav ul li {
   display: flex;
   align-items: center;
@@ -199,35 +83,11 @@ nav ul li a {
   color: var(--primaryTextColor);
 }
 
-.burger div {
-  width: 25px;
-  height: 2px;
-  background-color: #000;
-  margin: 7px;
-  transition: all 0.3s;
-  z-index: 99;
-}
-
-.burger {
-  display: none;
-  z-index: 99;
-  position: fixed;
-  top: 33px;
-  right: 35px;
-}
-
-/* Hero Section */
+/* about */
 #hero {
   padding: 40px 20px;
 }
 
-/* #hero .col-md-6 {
-  padding: 20px;
-} */
-
-/* #hero img {
-  border-radius: 50%;
-} */
 
 @media (max-width: 768px) {
   #hero {
@@ -239,56 +99,76 @@ nav ul li a {
   }
 }
 
+.btn-about {
+  background-color: var(--thirdBackgroundColor); 
+  color: white; 
+  padding: 0.5rem 1.5rem; 
+  border-radius: 0.25rem; 
+  border: none; 
+  transition: 0.3s ease;
+}
+
+.btn-about:hover {
+  background-color: #e66a00; 
+  color: white; 
+}
 
 /* Services Section */
 #services {
-  background-color: var(--secondaryBackgroundColor);
-  padding: var(--sectionPadding);
-}
-
-.services .pre-title {
-  margin: 0 auto;
-}
-
-.services-title {
+  background-color: #FFF4E7; 
+  padding: 4rem 2rem; 
   text-align: center;
 }
 
-.service {
-  padding: 3rem 2rem;
-  text-align: center;
-  background: var(--primaryBackgroundColor);
-  border-radius: var(--itemBorderRadius);
+#services h1 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
 }
 
-.service h4 {
-  margin: 1.5rem 0;
-  font-weight: 500;
-  font-size: 1.05rem;
+#services p {
+  color: #6c757d; 
+  max-width: 600px; 
 }
 
-.service-icon {
-  background: var(--thirdBackgroundColor);
-  width: fit-content;
-  margin: 0 auto;
-  padding: 1rem 1.3rem;
-  border-radius: 0.5rem;
+.services .row {
+  display: flex;
+  
+  gap: 2rem; 
+  flex-wrap: wrap; 
 }
 
-.service-icon svg {
-  fill: var(--primaryIconColor);
+.card-body{
+  text-align: left;
 }
 
-.service-icon {
-  background: var(--thirdBackgroundColor);
-  width: fit-content;
-  margin: 0 auto;
-  padding: 1rem 1.3rem;
-  border-radius: 0.5rem;
+.card {
+  background: #fff; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  padding: 2rem 1.5rem; 
+  transition: transform 0.3s ease; 
 }
 
-.service-icon svg {
-  fill: var(--primaryIconColor);
+.card:hover {
+  transform: translateY(-10px); 
+}
+
+.card img {
+  margin-bottom: 1rem;
+  width: 60px; 
+  height: 60px;
+}
+
+.card h5 {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.card p {
+  color: #6c757d;
+  font-size: 0.9rem;
 }
 
 /* My Project */
@@ -402,16 +282,4 @@ nav ul li a {
 
 .link ul li a {
   color: var(--primaryTextColor);
-}
-
-/* footer */
-.footer {
-  background: #212529;
-  color: #fff;
-  text-align: center;
-}
-
-.footer p {
-  margin-top: 5px;
-  margin-bottom: 5px;
 }

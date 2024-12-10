@@ -19,7 +19,7 @@ const Services = () => {
             <div className="card border-0 shadow-sm p-3 h-100">
               <div className="card-body">
                 <img
-                  src="foto/Vector1.png"
+                  src="/foto/Vector1.png"
                   alt="UI/UX Design"
                   className="mb-3"
                   style={{ width: "50px", height: "50px" }}
@@ -37,7 +37,7 @@ const Services = () => {
             <div className="card border-0 shadow-sm p-3 h-100">
               <div className="card-body">
                 <img
-                  src="foto/Vector2.png"
+                  src="/foto/Vector2.png"
                   alt="Web Design"
                   className="mb-3"
                   style={{ width: "50px", height: "50px" }}
@@ -55,7 +55,7 @@ const Services = () => {
             <div className="card border-0 shadow-sm p-3 h-100">
               <div className="card-body">
                 <img
-                  src="foto/Vector3.png"
+                  src="/foto/Vector3.png"
                   alt="App Design"
                   className="mb-3"
                   style={{ width: "50px", height: "50px" }}
@@ -73,7 +73,7 @@ const Services = () => {
             <div className="card border-0 shadow-sm p-3 h-100">
               <div className="card-body">
                 <img
-                  src="foto/Vector4.png"
+                  src="/foto/Vector4.png"
                   alt="Graphic Design"
                   className="mb-3"
                   style={{ width: "50px", height: "50px" }}

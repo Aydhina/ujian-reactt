@@ -25,7 +25,7 @@ const Project = () => {
                     <div class="col-md-4 mb-4">
                         <div class="card border-0">
                             <img
-                                src="foto/web1.png"
+                                src="/foto/Web1.png"
                                 class="card-img-top"
                                 alt="AirCalling Landing Page Design"
                             />
@@ -40,7 +40,7 @@ const Project = () => {
                     <div class="col-md-4 mb-4">
                         <div class="card border-0">
                             <img
-                                src="foto/web2.png"
+                                src="/foto/Web2.png"
                                 class="card-img-top"
                                 alt="AirCalling Landing Page Design"
                             />
@@ -56,7 +56,7 @@ const Project = () => {
                     <div class="col-md-4 mb-4">
                         <div class="card border-0">
                             <img
-                                src="foto/web3.png"
+                                src="/foto/Web3.png"
                                 class="card-img-top"
                                 alt="AirCalling Landing Page Design"
                             />
