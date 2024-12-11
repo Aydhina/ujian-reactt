@@ -154,11 +154,7 @@ nav ul li a {
   transform: translateY(-10px); 
 }
 
-.card img {
-  margin-bottom: 1rem;
-  width: 400px; 
-  height: 500px;
-}
+
 
 .card h5 {
   font-weight: bold;
@@ -226,11 +222,6 @@ nav ul li a {
   overflow: hidden;
 }
 
-.card-img-top {
-  border-radius: 20px;
-  object-fit: cover;
-  height: 500px;
-}
 
 /* Search */
 .custom-btn {
