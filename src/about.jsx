@@ -8,7 +8,7 @@ const About = () => {
       <div className="lign-items-center d-flex">
         <div className="mt-5 text-md-start text-center">
           <p className="fw-bold">Hi I am</p>
-          <h2 className="text-warning fw-bold">Fawzi Sayed</h2>
+          <h2 className="text-warning fw-bold"> Sayed</h2>
           <h1 className="display-4 fw-bold">Website Developer</h1>
           <p className="mt-3 text-secondary">
             Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa
